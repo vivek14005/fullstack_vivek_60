@@ -1,0 +1,344 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Front-End Developer Portfolio</title>
+    
+    <!-- CSS Styles -->
+    <style>
+        /* General Body & Typography */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth; /* Enables smooth scrolling for the whole page */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+      
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid #007BFF;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Main Content Sections */
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* About Me Section */
+        #about {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #about .bio {
+            flex: 2;
+        }
+
+        #about figure {
+            flex: 1;
+            margin: 0;
+            text-align: center;
+        }
+
+        #about figure img {
+            max-width: 200px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+        }
+
+        #about figure figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #skills li {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        /* Contact Section */
+        #contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Timetable Section & Table Styling */
+        #timetable h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 12px;
+        }
+
+        thead {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tfoot {
+            font-weight: bold;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Vivek</h1>
+            <p>Aspiring Front-End Developer</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <figure>
+                <!-- IMPORTANT: Replace 'your-photo.jpg' with the path to your actual photo -->
+                <img src="WhatsApp Image 2025-08-21 at 08.30.47_ef77e36a.jpg">
+                <figcaption>Crafting clean code and intuitive user experiences.</figcaption>
+            </figure>
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm a passionate and detail-oriented developer with a strong foundation in web technologies. 
+                    I enjoy solving complex problems and creating beautiful, responsive web applications. This portfolio showcases my journey, skills, and projects in the world of front-end development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>GLA University of Technology</strong> | Graduated May 2027</p>
+                <p>Relevant Coursework: Web Development, Data Structures & Algorithms, Human-Computer Interaction.</p>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </section>
+        
+        <!-- Academic Timetable Section -->
+        <section id="timetable">
+            <h2>My Academic Timetable</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:00</td>
+                        <td>Advanced JavaScript</td>
+                        <td>UI/UX Design</td>
+                        <td>Advanced JavaScript</td>
+                        <td>UI/UX Design</td>
+                        <td>Data Structures</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>History of Computing</td>
+                        <td>Algorithms</td>
+                        <td>History of Computing</td>
+                        <td>Algorithms</td>
+                        <td>Project Lab</td>
+                    </tr>
+                     <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>Study Break</td>
+                        <td>Team Meeting</td>
+                        <td>Web APIs</td>
+                        <td>Team Meeting</td>
+                        <td>Project Lab</td>
+                    </tr>
+                    <!-- Add more rows for different time slots -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Lunch Break: 12:00 - 1:00 PM</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for front-end development opportunities. Feel free to reach out!</p>
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">vraj67571@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vivek-thakur-07329628a/" target="_blank">https://www.linkedin.com/in/vivek-thakur-07329628a/</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
